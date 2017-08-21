@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="./assets/styles/site.css"/>
     <title>A Game</title>
 </head>
 <body>
-    <h1>You Won!</h1>
-    <h1>the word is: {{word}}</h1>
-    <form method="get" action="/game_restart">
-            <button>Play Again</button>
-    </form>
+     <div class="main">
+        <h1>You Won!</h1>
+        <h1>the word is: {{word}}</h1>
+        <form method="get" action="/game_restart">
+                <button>Play Again</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -12,6 +12,8 @@ application.engine('mustache', mustache());
 application.set('views', './views');
 application.set('view engine', 'mustache');
 
+application.use('/assets', express.static('./assets'));
+
 application.use(bodyParser());
 application.use(bodyParser.urlencoded({ extended: true }));
 

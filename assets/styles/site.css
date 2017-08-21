@@ -1,0 +1,15 @@
+body{
+    background-color: #669999;
+}
+.main{
+    margin: 10vmin;
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFAAAA;
+    color: #354F00;
+}
