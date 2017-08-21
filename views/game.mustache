@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Game</title>
+</head>
+<body>
+    <form method="post" action="/game">
+        <input type="text" name="guess" placeholder="guess">
+        <button>Guess</button>
+    </form>
+    <p>
+        {{#guess_word_array}}
+            <span>{{.}}</span>
+        {{/guess_word_array}}
+    </p>
+    <h1>Guessed Letters</h1>
+    <p>
+        {{#guessed_letters}}
+            <span>{{.}} </span>
+        {{/guessed_letters}}
+    </p>
+    <h2>{{wrong_guesses_left}} wrong guesses left</h2>
+    <p>
+        {{#msgs}}
+            <span>{{.}} </span>
+        {{/msgs}}
+    </p>
+    <h1>the word is: {{word}}</h1>
+    <form method="get" action="/game_restart">
+            <button>Play Again</button>
+    </form>
+</body>
+</html>
